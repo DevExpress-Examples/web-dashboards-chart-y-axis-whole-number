@@ -1,3 +1,12 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Default.aspx](./CS/ScaleIntegerSpacing/Default.aspx) (VB: [Default.aspx](./VB/ScaleIntegerSpacing/Default.aspx))
+* [Default.aspx.cs](./CS/ScaleIntegerSpacing/Default.aspx.cs) (VB: [Default.aspx](./VB/ScaleIntegerSpacing/Default.aspx))
+* [Global.asax](./CS/ScaleIntegerSpacing/Global.asax) (VB: [Global.asax.vb](./VB/ScaleIntegerSpacing/Global.asax.vb))
+* [Global.asax.cs](./CS/ScaleIntegerSpacing/Global.asax.cs) (VB: [Global.asax.vb](./VB/ScaleIntegerSpacing/Global.asax.vb))
+* [SalesPersonData.cs](./CS/ScaleIntegerSpacing/SalesPersonData.cs) (VB: [SalesPersonData.vb](./VB/ScaleIntegerSpacing/SalesPersonData.vb))
+<!-- default file list end -->
 # Web Dashboards - How to make the Chart Item display only whole numbers in the Y axis' labels
 
 
