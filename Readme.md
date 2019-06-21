@@ -8,6 +8,9 @@
 * [SalesPersonData.cs](./CS/ScaleIntegerSpacing/SalesPersonData.cs) (VB: [SalesPersonData.vb](./VB/ScaleIntegerSpacing/SalesPersonData.vb))
 <!-- default file list end -->
 # Web Dashboards - How to make the Chart Item display only whole numbers in the Y axis' labels
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/t607149/)**
+<!-- run online end -->
 
 
 <p>To ensure better appearance, our Dashboard Chart Items automatically calculate the interval between grid lines and major tickmarks. In certain cases, automatically calculated values are not suitable. For instance, the Y axis' labels can display fractional numbers when the chart contains only whole number values - measures with the Count summary type.</p>
