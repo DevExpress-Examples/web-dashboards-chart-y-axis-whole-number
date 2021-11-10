@@ -1,1 +1,1 @@
-﻿<%@ Application CodeBehind="Global.asax.vb" Inherits="ScaleIntegerSpacing.Global" Language="vb" %>
+﻿<%@ Application CodeBehind="Global.asax.cs" Inherits="ScaleIntegerSpacing.Global" Language="C#" %>
