@@ -1,31 +1,41 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="ScaleIntegerSpacing.Default" %>
 
-<%@ Register Assembly="DevExpress.Dashboard.v17.2.Web, Version=17.2.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.DashboardWeb" TagPrefix="dx" %>
-
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" style="height:100%">
+<html>
 <head runat="server">
     <title></title>
 
+    <style type="text/css">
+        html, body, form {  
+            height: 100%;  
+            margin: 0;  
+            padding: 0;  
+            overflow: hidden;  
+        }
+    </style>
+
     <script type="text/javascript">
-        function onItemWidgetOptionsUpdating(s, e) {
-            if (e.ItemName == "chartDashboardItem1") {
-                var widget = e.GetWidget();
-                // Set this option for each pane
-                widget.option('valueAxis[0].allowDecimals', false);
+        function onBeforeRender(s, e) {
+            var dashboardControl = s.GetDashboardControl();
+            var viewerApiExtension = dashboardControl.findExtension('viewer-api');
+            if (viewerApiExtension)
+                viewerApiExtension.on('itemWidgetOptionsPrepared', onItemWidgetOptionsPrepared);
+        }
+
+        function onItemWidgetOptionsPrepared(args) {
+            if (args.itemName == "chartDashboardItem1") {
+                args.options.valueAxis[0].allowDecimals = false;
             }
         }
     </script>
-
 </head>
-<body style="height:100%">
-    <form id="form1" runat="server" style="height:100%">
-            <dx:ASPxDashboard ID="ASPxDashboard1" ClientInstanceName="webDashboard" runat="server" WorkingMode="Viewer" Height="100%"
-                OnDataLoading="ASPxDashboard1_DataLoading">
-                <ClientSideEvents ItemWidgetCreated="onItemWidgetOptionsUpdating" ItemWidgetUpdated="onItemWidgetOptionsUpdating"/>
-            </dx:ASPxDashboard>            
-
+<body>
+    <form id="form1" runat="server">
+        <dx:ASPxDashboard ID="ASPxDashboard1" runat="server" ClientInstanceName="webDashboard" 
+            WorkingMode="Viewer" Height="100%" OnDataLoading="ASPxDashboard1_DataLoading">
+            <ClientSideEvents BeforeRender="onBeforeRender" />
+        </dx:ASPxDashboard>
     </form>
 </body>
 </html>

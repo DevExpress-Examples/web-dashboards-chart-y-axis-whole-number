@@ -11,6 +11,7 @@ namespace ScaleIntegerSpacing {
             DataSourceInMemoryStorage dataSourceStorage = new DataSourceInMemoryStorage();
 
             DashboardObjectDataSource dataSource = new DashboardObjectDataSource("Data");
+            dataSource.DataId = "odsSales";
             dataSource.ComponentName = "objData";
             dataSource.DataSource = typeof(ViewModel);
             dataSource.DataMember = "CreateData";
@@ -20,8 +21,8 @@ namespace ScaleIntegerSpacing {
         }
 
         protected void ASPxDashboard1_DataLoading(object sender, DataLoadingWebEventArgs e) {
-            //if(e.DataSourceName == "SalesPersonData") {
-            //    e.Data = SalesPersonData.CreateData();
+            //if(e.DataId == "odsSales") {
+            //    e.Data = ViewModel.CreateData();
             //}
         }
     }

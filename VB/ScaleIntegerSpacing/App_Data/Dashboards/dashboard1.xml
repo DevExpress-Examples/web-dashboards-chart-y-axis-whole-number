@@ -2,7 +2,7 @@
 <Dashboard>
   <Title Text="Dashboard" />
   <DataSources>
-    <ObjectDataSource ComponentName="objData">
+    <ObjectDataSource ComponentName="objData" DataId="odsSales">
       <Name>Data</Name>
       <DataSource Type="ScaleIntegerSpacing.ViewModel, ScaleIntegerSpacing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
       <DataMember>CreateData</DataMember>
