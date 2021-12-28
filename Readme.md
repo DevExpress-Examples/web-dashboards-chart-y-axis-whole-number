@@ -3,15 +3,7 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T607149)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
 
-* [Default.aspx](./CS/ScaleIntegerSpacing/Default.aspx) (VB: [Default.aspx](./VB/ScaleIntegerSpacing/Default.aspx))
-* [Default.aspx.cs](./CS/ScaleIntegerSpacing/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/ScaleIntegerSpacing/Default.aspx.vb))
-* [Global.asax](./CS/ScaleIntegerSpacing/Global.asax) (VB: [Global.asax](./VB/ScaleIntegerSpacing/Global.asax))
-* [Global.asax.cs](./CS/ScaleIntegerSpacing/Global.asax.cs) (VB: [Global.asax.vb](./VB/ScaleIntegerSpacing/Global.asax.vb))
-* [SalesPersonData.cs](./CS/ScaleIntegerSpacing/SalesPersonData.cs) (VB: [SalesPersonData.vb](./VB/ScaleIntegerSpacing/SalesPersonData.vb))
-<!-- default file list end -->
 # Web Dashboard - How to make the Chart Item display only whole numbers in the Y axis' labels
 <!-- run online -->
 **[[Run Online]](https://codecentral.devexpress.com/128580496/)**
@@ -26,6 +18,14 @@ Starting with version 17.2, dxChart widgets, used internally in our Web Dashboar
 The following screencast demonstrates this approach and the default behavior.
 
 ![](https://raw.githubusercontent.com/DevExpress-Examples/web-dashboards-how-to-make-the-chart-item-display-only-whole-numbers-in-the-y-axis-labels-t607149/17.2.3+/media/abdda36f-9b47-4677-a480-f1582db55b6b.png)
+
+<!-- default file list -->
+## Files to look at
+
+* [Default.aspx](./CS/ScaleIntegerSpacing/Default.aspx) (VB: [Default.aspx](./VB/ScaleIntegerSpacing/Default.aspx))
+* [Default.aspx.cs](./CS/ScaleIntegerSpacing/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/ScaleIntegerSpacing/Default.aspx.vb))
+* [SalesPersonData.cs](./CS/ScaleIntegerSpacing/SalesPersonData.cs) (VB: [SalesPersonData.vb](./VB/ScaleIntegerSpacing/SalesPersonData.vb))
+<!-- default file list end -->
 
 ## Documentation
 
